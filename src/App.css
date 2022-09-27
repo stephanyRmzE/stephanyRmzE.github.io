@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  background-color: #133686;
 }
 
 .App-logo {
@@ -35,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.body{
+  background-color: aliceblue;
 }

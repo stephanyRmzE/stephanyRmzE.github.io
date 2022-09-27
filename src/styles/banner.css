@@ -1,0 +1,77 @@
+.name-style{
+  color: #AC2D95;
+  letter-spacing: 15;
+  font-weight: bold;
+  font-size: 13vmin;
+  text-shadow: 2px 2px 8px rgba(0,0,0, 0.25);
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 0px
+
+}
+
+.container-banner{
+  width: 100%;
+}
+
+.wave-pos-1{
+  position: absolute;
+  bottom: 100px;
+  width: 100%
+}
+
+.wave-pos-2 {
+  position: absolute;
+  bottom: 70px;
+  width: 100%
+}
+
+.wave-pos-3 {
+  position: absolute;
+  bottom: 60px;
+  width: 100%
+}
+
+.wave-pos-4 {
+  position: absolute;
+  bottom: 60px;
+  width: 100%
+}
+
+.wave-pos-5 {
+  position: absolute;
+  bottom: 50px;
+  width: 100%
+}
+
+.wave-pos-6 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%
+}
+
+.wave-pos-7 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%
+}
+
+.wave-pos-8 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%
+}
+
+.button-banner{
+  stroke: #FFF;
+  margin: 10px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+}
+
+.button-center{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+}
