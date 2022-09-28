@@ -2,6 +2,7 @@ import '../styles/banner.css'
 import React, { Component } from "react"
 import Wave from 'react-wavify'
 import { SocialIcon } from "react-social-icons"
+import profile from '../assets/images/profile.jpeg'
 
 
 
@@ -129,7 +130,19 @@ function Banner() {
           <h1 className="name-style">
             Hello, I am Stephany and I'm here <br /> to make your ideas a reality.
           </h1>
-
+            <div className='profile-image'>
+              <svg viewBox='-7 0 175 135' height='200px' width= '200px'>
+                <defs>
+                  <pattern id="imgpattern" x="0" y="0" width="1" height="1">
+                    <image width="180px" height="172px"
+                      xlinkHref={profile} />
+                  </pattern>
+                </defs>
+                <path fill="url(#imgpattern)" stroke= '#777'
+                      d='M 157 37 Q 168 45 168 59 Q 159 102 149.2992 133.4362 Q 146.88 148.32 135.36 149.76 Q 84.96 151.2 36 151.2 Q 23.04 149.76 18.72 133.92 Q 13.6858 121.3056 -3.7325 68.7398 Q -6.2208 51.2179 7.465 40.4352 Q 33.5923 14.8262 58.4755 -6.7392 Q 84.6029 -28.3046 108.2419 -8.087 z' >
+                </path>
+              </svg>
+            </div>
         </div>
 
 
