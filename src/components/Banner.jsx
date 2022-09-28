@@ -4,6 +4,7 @@ import Wave from 'react-wavify'
 import { SocialIcon } from "react-social-icons"
 
 
+
 function Banner() {
 
   let pauseStatus =false;
@@ -12,7 +13,7 @@ function Banner() {
     <div className='container-banner'>
       <div>
         <div className="wave-pos-1">
-          <Wave fill="#F172A1"
+          <Wave fill="#6e1f82"
             paused={pauseStatus}
             options={{
               height: 15,
@@ -23,7 +24,7 @@ function Banner() {
         </div>
         <div className="wave-pos-2">
           <Wave
-            fill="rgb(172,46,149)"
+            fill="#682a92"
             paused={pauseStatus}
             options={{
               height: 1,
@@ -37,7 +38,7 @@ function Banner() {
 
         <div className="wave-pos-3">
           <Wave
-            fill="#B39BC8"
+            fill="#52007a"
             paused={pauseStatus}
             options={{
               height: 10,
@@ -49,7 +50,7 @@ function Banner() {
         </div>
         <div className="wave-pos-4">
           <Wave
-            fill="#E64398"
+            fill="#5e007a"
             paused={pauseStatus}
             options={{
               height: 40,
@@ -62,7 +63,7 @@ function Banner() {
 
         <div className="wave-pos-5">
           <Wave
-            fill="rgb(161,194,209)"
+            fill="#6e1f82"
             paused={pauseStatus}
             options={{
               height: 50,
@@ -74,7 +75,7 @@ function Banner() {
         </div>
         <div className="wave-pos-6">
           <Wave
-            fill="rgb(172,46,149"
+            fill="#52007a"
             paused={pauseStatus}
             options={{
               height: 40,
@@ -87,19 +88,32 @@ function Banner() {
 
         <div className="wave-pos-7">
           <Wave
-            fill="#B39BC8"
+            fill="#682a92"
             paused={pauseStatus}
             options={{
-              height: 75,
+              height: 70,
+              amplitude: 5,
+              speed: 0.3,
+              points: 5
+            }}
+            />
+        </div>
+
+        <div className="wave-pos-8">
+          <Wave
+            fill="#5e007a"
+            paused={pauseStatus}
+            options={{
+              height: 90,
               amplitude: 20,
               speed: 0.3,
               points: 3
             }}
           />
         </div>
-        <div className="wave-pos-8">
+        <div className="wave-pos-9">
           <Wave
-            fill="#E64398"
+            fill="#6e1f82"
             paused={pauseStatus}
             options={{
               height: 120,
@@ -110,9 +124,14 @@ function Banner() {
           />
         </div>
 
-        <h1 className="name-style">
-          Stephany Ramirez
-        </h1>
+
+        <div className='profile-container' >
+          <h1 className="name-style">
+            Hello, I am Stephany and I'm here <br /> to make your ideas a reality.
+          </h1>
+
+        </div>
+
 
         <div className="button-center">
           <SocialIcon
