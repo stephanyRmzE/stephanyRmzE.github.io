@@ -1,12 +1,12 @@
 .name-style{
   color: #391A4C;
   font-weight: bold;
-  font-size: 3.5em;
+  font-size: 3em;
   text-shadow: 2px 2px 8px rgba(0,0,0, 0.25);
   text-align: center;
   margin-top: 15vh;
   margin-bottom: 0px;
-
+  text-align: -webkit-right;
 
 }
 
@@ -81,4 +81,15 @@
   width: 50%;
   text-align: center;
 
+}
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.profile-image{
+  margin-top: 10vh;
+  margin-left: 2vw;
 }
