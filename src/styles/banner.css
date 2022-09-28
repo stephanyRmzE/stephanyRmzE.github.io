@@ -1,14 +1,15 @@
 .name-style{
-  color: #AC2D95;
-  letter-spacing: 15;
+  color: #391A4C;
   font-weight: bold;
-  font-size: 13vmin;
+  font-size: 3.5em;
   text-shadow: 2px 2px 8px rgba(0,0,0, 0.25);
   text-align: center;
   margin-top: 15vh;
-  margin-bottom: 0px
+  margin-bottom: 0px;
+
 
 }
+
 
 .container-banner{
   width: 100%;
@@ -46,17 +47,23 @@
 
 .wave-pos-6 {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   width: 100%
 }
 
 .wave-pos-7 {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   width: 100%
 }
 
 .wave-pos-8 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%
+}
+
+.wave-pos-9 {
   position: absolute;
   bottom: 0px;
   width: 100%
