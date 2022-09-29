@@ -2,7 +2,7 @@ import '../styles/banner.css'
 import React, { Component } from "react"
 import Wave from 'react-wavify'
 import { SocialIcon } from "react-social-icons"
-import profile from '../assets/images/profile.jpeg'
+import profile from '../assets/profile.jpeg'
 
 
 
@@ -13,6 +13,7 @@ function Banner() {
   return (
     <div className='container-banner'>
       <div>
+        <div>
         <div className="wave-pos-1">
           <Wave fill="#6e1f82"
             paused={pauseStatus}
@@ -124,11 +125,11 @@ function Banner() {
             }}
           />
         </div>
-
+        </div>
 
         <div className='profile-container' >
           <h1 className="name-style">
-            Hello, I am Stephany and I'm here <br /> to make your ideas a reality.
+            Hello, I am Stephany
           </h1>
             <div className='profile-image'>
               <svg viewBox='-7 0 175 135' height='200px' width= '200px'>
