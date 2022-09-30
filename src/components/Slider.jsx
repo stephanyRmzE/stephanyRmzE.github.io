@@ -1,40 +1,48 @@
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import {useEffect, useState } from 'react'
-import Spinner from '../components/Spinner'
-import homepage from '../assets/images/hobbyMate/homePage.png'
-import explore from '../assets/images/marketPlace/explore.png'
-import homePet from '../assets/images/petmate/Petmate_home.JPG'
+import {useState } from 'react'
 import '../styles/slider.css'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-function Slider() {
-  const array = [
-    {id:1, url: 'https://house-marketplace-sre.vercel.app/', image: explore},
-    {id:2, url: 'https://petmate-stephanyrmze.herokuapp.com/', image: homePet}
-  ]
+function Slider(props) {
+
+  const [loading, setLoading] = useState(true);
+  const project = props.projectData
+
+  if (project.length === 0) {
+    return <></>
+  }
+  console.log('whats inside projects')
+  console.log(project.images[0])
 
   return (
 
-      <div className="slider-container">
-        <Swiper slidesPerView={1} pagination={{ clickable: true }}>
-          {array.map((data, id) => (
+    project && (
+      <>
+        <div className="sliderContainer">
+          <Swiper slidesPerView={1} pagination={{ clickable: true }}>
+            {project.images.map((url,index) => (
 
-              <SwiperSlide key={id}>
-                <a href={data.url}>
-                <div className="sliderDiv" >
-                  <img src={data.image} alt="" className="sliderImg" />
-                </div>
-                </a>
-              </SwiperSlide>
+                <SwiperSlide key={index}>
+                  <a href={project.url}>
+                    <div
+                  style={{
+                    backgroundImage: `url(${project.images[index]})`,
+                    borderRadius: '5px',
+                  }}
+                  className='swiperSlideDiv'
+                ></div>
+                <p className="swiperSlideText">{project.name}</p>
+                  </a>
+                </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </>
 
-          ))}
-        </Swiper>
-      </div>
-
-  )
+  ))
 }
 
 export default Slider
