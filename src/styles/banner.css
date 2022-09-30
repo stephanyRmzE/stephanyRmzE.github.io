@@ -89,6 +89,10 @@
   .name-style {
     font-size: 2em;
   }
+
+  #svgContainer{
+    
+  }
 }
 .buttonCenter{
     position: absolute;

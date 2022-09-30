@@ -1,0 +1,95 @@
+.contactDiv{
+  width: 80vw;
+  margin: 2em auto;
+}
+
+.infoDiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formInputDiv{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+
+}
+
+.messageForm {
+  margin: 2em auto;
+
+}
+
+
+.messageDiv {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.messageLabel {
+  margin-bottom: 0.5rem;
+}
+.textarea{
+  box-shadow: rgba(0, 0, 0, 0.11);
+  border: none;
+  background: #e9e9e954;
+  height: 10rem;
+  width: 100%;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.8em;
+  font-size: 1rem;
+
+
+}
+
+.pageHeader{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.inputLabel{
+  color: #391A4C;
+}
+
+
+.primaryButton {
+  cursor: pointer;
+  background: #52007a;
+  padding: 0.85rem 2rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.formInput{
+  background-color:#e9e9e954;
+  border: none;
+  padding: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 500px) {
+.infoDiv{
+  display: block;
+  width:100%;
+
+}
+
+.formInputDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+}
