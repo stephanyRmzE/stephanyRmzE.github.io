@@ -12,16 +12,13 @@ function NavBar() {
     <div>
 
       <nav className="navigation">
-      <p>
-        <FaSmile onClick={() => navigate('/')} color="#ac2d95" />
-      </p>
       <button
         className="hamburger"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded)
         }}
       >
-        <FlowerIcon fill= '#AC2D95' width='25px' height='25px'/>
+        <FlowerIcon fill= '#52007a' width='25px' height='25px'/>
       </button>
       <div
         className={
@@ -30,10 +27,10 @@ function NavBar() {
       >
         <ul>
           <li>
-            <a href="/">Home</a>
+            <p onClick={() => navigate('/')}>Home</p>
           </li>
           <li>
-            <a href="/">About</a>
+            <p onClick={() => navigate('/about')}>About</p>
           </li>
           <li>
             <a href="/">Contact</a>

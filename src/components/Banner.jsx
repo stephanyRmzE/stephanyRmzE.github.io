@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import Wave from 'react-wavify'
 import { SocialIcon } from "react-social-icons"
 import profile from '../assets/profile.jpeg'
+import '../styles/profile.css'
 
 
 
@@ -129,25 +130,26 @@ function Banner() {
 
         <div className='profile-container' >
           <h1 className="name-style">
-            Hello, I am Stephany
+            Hello! <br /> I am Stephany, <br /> a software developer.
           </h1>
-            <div className='profile-image'>
-              <svg viewBox='-7 0 175 135' height='200px' width= '200px'>
+
+              <svg id= 'svgContainer' viewBox='-10 -40 190 190' >
                 <defs>
                   <pattern id="imgpattern" x="0" y="0" width="1" height="1">
-                    <image width="180px" height="172px"
+                    <image width="182px" height="174px"
                       xlinkHref={profile} />
                   </pattern>
                 </defs>
                 <path fill="url(#imgpattern)" stroke= '#777'
-                      d='M 157 37 Q 168 45 168 59 Q 159 102 149.2992 133.4362 Q 146.88 148.32 135.36 149.76 Q 84.96 151.2 36 151.2 Q 23.04 149.76 18.72 133.92 Q 13.6858 121.3056 -3.7325 68.7398 Q -6.2208 51.2179 7.465 40.4352 Q 33.5923 14.8262 58.4755 -6.7392 Q 84.6029 -28.3046 108.2419 -8.087 z' >
+                      d='M 157.5024 37.1184 Q 168.5376 45.144 168.5376 59.1888 Q 159.5088 102.3264 149.777 133.8632 Q 147.35 148.7946 135.7932 150.2392 Q 85.2319 151.6838 36.1152 151.6838 Q 23.1137 150.2392 18.7799 134.3485 Q 13.7296 121.6938 -3.7444 68.9598 Q -6.2407 51.3818 7.4889 40.5646 Q 33.6998 14.8736 58.6626 -6.7608 Q 84.8736 -28.3952 108.5883 -8.1129 z' >
                 </path>
               </svg>
-            </div>
+
+
         </div>
 
 
-        <div className="button-center">
+        <div className="buttonCenter">
           <SocialIcon
             className= 'button-banner'
             bgColor="rgba(0,0,0,0)"

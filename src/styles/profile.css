@@ -1,0 +1,19 @@
+
+.imageContainer{
+  display: flex;
+}
+
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+  margin: 0 1em;
+  height: 52vh;
+}
+
+@media screen and (max-width: 550px) {
+  .profile-container{
+    height: 66vh;
+    margin: 0em;
+  }
+}
