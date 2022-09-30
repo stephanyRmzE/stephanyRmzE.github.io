@@ -26,14 +26,14 @@ function NavBar() {
         }
       >
         <ul>
-          <li>
-            <p onClick={() => navigate('/')}>Home</p>
+          <li  onClick={() => navigate('/')}>
+            <p className="navExpBut" >Home</p>
           </li>
-          <li>
-            <p onClick={() => navigate('/about')}>About</p>
+          <li onClick={() => navigate('/about')}>
+            <p className="navExpBut" >About</p>
           </li>
-          <li>
-            <a href="/">Contact</a>
+          <li onClick={() => navigate('/contact')}>
+            <p className="navExpBut">Contact</p>
           </li>
         </ul>
       </div>
