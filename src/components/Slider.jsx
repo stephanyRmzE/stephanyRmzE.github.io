@@ -1,22 +1,17 @@
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import {useState } from 'react'
 import '../styles/slider.css'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function Slider(props) {
 
-  const [loading, setLoading] = useState(true);
   const project = props.projectData
 
   if (project.length === 0) {
     return <></>
   }
-  console.log('whats inside projects')
-  console.log(project.images[0])
-
   return (
 
     project && (
