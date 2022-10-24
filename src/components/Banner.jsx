@@ -1,8 +1,8 @@
 import '../styles/banner.css'
-import React, { Component } from "react"
+import React from "react"
 import Wave from 'react-wavify'
 import { SocialIcon } from "react-social-icons"
-import profile from '../assets/profile.jpeg'
+import profile from '../assets/profile_form.png'
 import '../styles/profile.css'
 
 
@@ -14,7 +14,29 @@ function Banner() {
   return (
     <div className='container-banner'>
       <div>
-        <div>
+
+
+
+          <div className='container-name-photo'>
+            <div className="name-button-container">
+
+
+            <div className='name-button-div'>
+              <h1 className="name-style">
+                Hello! <br /> I am <span className='my-name'>Stephany</span>, <br /> a software developer.
+              </h1>
+
+              <button className="btn-pink">
+                Contact Me
+              </button>
+            </div>
+            </div>
+            <div className="image-div">
+            <img className='profile-image' src={profile} alt="Stephany's pic" />
+            </div>
+          </div>
+
+    <div className='wave-container'>
         <div className="wave-pos-1">
           <Wave fill="#6e1f82"
             paused={pauseStatus}
@@ -107,8 +129,8 @@ function Banner() {
             fill="#5e007a"
             paused={pauseStatus}
             options={{
-              height: 90,
-              amplitude: 20,
+              height: 87,
+              amplitude: 15,
               speed: 0.3,
               points: 3
             }}
@@ -119,33 +141,25 @@ function Banner() {
             fill="#6e1f82"
             paused={pauseStatus}
             options={{
-              height: 120,
-              amplitude: 15,
+              height: 95,
+              amplitude: 13,
               speed: 0.2,
               points: 3
             }}
           />
         </div>
+        <div className="wave-pos-10">
+          <Wave
+            fill="#ffffff"
+            paused={pauseStatus}
+            options={{
+              height: 130,
+              amplitude: 12,
+              speed: 0.2,
+              points: 5
+            }}
+          />
         </div>
-
-        <div className='profile-container' >
-          <h1 className="name-style">
-            Hello! <br /> I am Stephany, <br /> a software developer.
-          </h1>
-
-              <svg id= 'svgContainer' viewBox='-10 -40 190 190' >
-                <defs>
-                  <pattern id="imgpattern" x="0" y="0" width="1" height="1">
-                    <image width="182px" height="174px"
-                      xlinkHref={profile} />
-                  </pattern>
-                </defs>
-                <path fill="url(#imgpattern)" stroke= '#777'
-                      d='M 157.5024 37.1184 Q 168.5376 45.144 168.5376 59.1888 Q 159.5088 102.3264 149.777 133.8632 Q 147.35 148.7946 135.7932 150.2392 Q 85.2319 151.6838 36.1152 151.6838 Q 23.1137 150.2392 18.7799 134.3485 Q 13.7296 121.6938 -3.7444 68.9598 Q -6.2407 51.3818 7.4889 40.5646 Q 33.6998 14.8736 58.6626 -6.7608 Q 84.8736 -28.3952 108.5883 -8.1129 z' >
-                </path>
-              </svg>
-
-
         </div>
 
 
