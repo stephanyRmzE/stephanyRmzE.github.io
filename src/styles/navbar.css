@@ -101,3 +101,10 @@
 
 
 }
+
+.navbar-brand{
+  margin: 1em;
+}
+.navbar-brand img {
+  width: 30px;
+}

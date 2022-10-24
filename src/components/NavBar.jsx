@@ -1,9 +1,8 @@
 import { useState } from "react"
 import "../styles/navbar.css"
-import { FaSmile } from 'react-icons/fa';
 import {ReactComponent as FlowerIcon} from '../assets/svg/flower.svg'
 import { useNavigate } from "react-router-dom";
-
+import logo from '../assets/favicon-32x32.png'
 function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
   const navigate = useNavigate()
@@ -12,6 +11,9 @@ function NavBar() {
     <div>
 
       <nav className="navigation">
+      <a class="navbar-brand" href="/">
+        <img src={logo} alt="logo"/>
+      </a>
       <button
         className="hamburger"
         onClick={() => {
