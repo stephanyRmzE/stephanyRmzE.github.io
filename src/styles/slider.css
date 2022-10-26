@@ -10,8 +10,18 @@
 }
 
 .projectsTitle{
-  margin: 0 1em 1em;
+  margin: 0em 0 1em 1em;
   font-size: 3em;
+}
+
+.swiperSlideText {
+
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  font-weight: 600;
+  max-width: 90%;
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 550px) {
@@ -19,7 +29,7 @@
   width: 100%;
   }
   .projectsTitle{
-  margin: 0 0 0 1em;
+  margin: 0 0 -1 1em;
   font-size: 2em;
   }
 }
@@ -41,37 +51,22 @@
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .swiperSlideDiv {
     height: 36vh;
-    background-Size: 90vw;
+    background-Size: 90%;
   }
 }
 
 @media (min-width: 1000px) {
   .swiperSlideDiv {
     height: 60vh;
-    background-Size: 45vw;
+    background-Size: 90%;
   }
 }
 
 .swiperSlideImg {
-  width: 80%;
+  width: auto;
   object-fit: cover;
 
-}
-
-.swiperSlideText {
-
-  position: absolute;
-  top: 4%;
-  left: 5%;
-  font-weight: 600;
-  max-width: 90%;
-  font-size: 1.25rem;
-}
-@media (min-width: 1024px) {
-  .swiperSlideText {
-    font-size: 1.75rem;
-  }
 }

@@ -10,12 +10,10 @@
 
 .footer-links {
   display: flex;
-  align-items: center;
 }
 
-.footer .fa-heart {
-  color: #D23333;
-}
 .footer-copyright{
+  width: 40vw;
   color: white;
+  text-align: end;
 }
