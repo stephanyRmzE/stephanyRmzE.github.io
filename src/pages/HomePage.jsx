@@ -1,5 +1,6 @@
 
 import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import Projects from './Projects'
 
 function HomePage() {
@@ -10,7 +11,7 @@ function HomePage() {
     <>
       <Banner></Banner>
       <Projects></Projects>
-
+      <Footer></Footer>
   </>
 )
 }
