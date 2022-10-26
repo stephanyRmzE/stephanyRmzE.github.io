@@ -32,7 +32,7 @@ function Footer() {
             url="mailto:stephany.ramireze@gmail.com"
             />
     </div>
-  <div class="footer-copyright">
+  <div className="footer-copyright">
     Copyright &copy; {footerYear} All rights reserved
   </div>
 </div>
