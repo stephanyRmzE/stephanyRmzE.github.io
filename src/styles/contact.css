@@ -92,4 +92,14 @@ a{
     flex-direction: column;
     width: 100%;
 }
+
+.primaryButton{
+  margin: auto;
+  width: 100%;
+
+}
+
+.pageHeader {
+  font-size: 1.7rem;
+}
 }

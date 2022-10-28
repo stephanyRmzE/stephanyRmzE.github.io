@@ -12,7 +12,7 @@ function Banner() {
   let pauseStatus =false;
 
   return (
-    <div className='container-banner'>
+    <div className='container-banner' id="banner">
       <div>
 
 

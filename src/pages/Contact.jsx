@@ -23,13 +23,9 @@ function Contact() {
 
   return (
     <div className='pageContainer'>
-
-
-
-
         <main>
 
-          <div className="contactDiv">
+          <div className="contactDiv" id="contact">
             <p className='pageHeader'>Love to hear from you 👋</p>
             <form className='messageForm'>
               <div className="infoDiv" >

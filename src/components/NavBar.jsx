@@ -1,10 +1,11 @@
 import { useState } from "react"
 import "../styles/navbar.css"
 import {ReactComponent as FlowerIcon} from '../assets/svg/flower.svg'
-
+import { Link } from "react-scroll";
 import logo from '../assets/favicon-32x32.png'
 
 function NavBar() {
+
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
 
@@ -14,7 +15,16 @@ function NavBar() {
       <nav className="navigation">
 
       <a className="navbar-brand" href="/">
-        <img src={logo} alt="logo"/>
+        <Link
+              className="navExpBut"
+              activeClass="active"
+              to="banner"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            ><img src={logo} alt="logo" /></Link>
+
       </a>
       <button
         className="hamburger"
@@ -31,13 +41,35 @@ function NavBar() {
       >
         <ul>
           <li  >
-            <p className="navExpBut" >Home</p>
+            <Link
+              className="navExpBut"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >About</Link>
           </li>
           <li >
-            <p className="navExpBut" >About</p>
+            <Link
+              className="navExpBut"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Projects</Link>
           </li>
           <li >
-            <p className="navExpBut">Contact</p>
+            <Link
+              className="navExpBut"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Contact</Link>
           </li>
         </ul>
       </div>
