@@ -24,13 +24,7 @@
   text-shadow: -1px 0 1px #391a4c7d, 0 1px 1px #391a4c7d, 1px 0 1px #391a4c7d, 0 -1px 1px #391a4c7d
 
 }
-@media screen and (max-width: 550px) {
 
-  .projectsTitle {
-    margin: 0 0 1em 1em;
-    font-size: 2em;
-  }
-}
 
 .swiper-pagination-bullet-active {
   background-color: #ffffff !important;
@@ -47,4 +41,36 @@
 .swiperSlideImg {
   object-fit: cover;
 
+}
+
+@media screen and (max-width: 550px) {
+
+  .projects-div {
+      margin: 0;
+      height: 75vh;
+      background-color: #740A8F;
+      padding: 1px;
+    }
+
+  .projectsTitle {
+    margin: 1em 0 1em 0;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  .swiperSlideText {
+
+    top: -2%;
+    left: 4%;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+  }
+
+    .swiperSlideDiv {
+      background-Repeat: no-repeat;
+      background-position: center;
+      height: 55vh;
+      background-size: contain;
+    }
 }
