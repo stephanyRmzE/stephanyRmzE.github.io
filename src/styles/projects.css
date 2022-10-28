@@ -1,0 +1,50 @@
+.projects-div{
+  margin: 0;
+  height: 100vh;
+  background-color: #740A8F;
+  padding: 1px;
+}
+
+.projectsTitle {
+  margin: 0.5em 0 0.5em 0em;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+.swiperSlideText {
+
+  position: absolute;
+  bottom: 4%;
+  right: 15%;
+  font-weight: 700;
+  max-width: 90%;
+  font-size: 2rem;
+  color: white;
+  text-shadow: -1px 0 1px #391a4c7d, 0 1px 1px #391a4c7d, 1px 0 1px #391a4c7d, 0 -1px 1px #391a4c7d
+
+}
+@media screen and (max-width: 550px) {
+
+  .projectsTitle {
+    margin: 0 0 1em 1em;
+    font-size: 2em;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+.swiperSlideDiv {
+  background-Repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  background-size: contain;
+
+}
+
+.swiperSlideImg {
+  object-fit: cover;
+
+}

@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
 import "swiper/css/bundle";
 import {useEffect, useState } from 'react'
 import { collection, getDocs, query } from "firebase/firestore";
 import {db} from '../firebase.config'
-import '../styles/slider.css'
+import '../styles/projects.css'
 import Spinner from '../components/Spinner'
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 function Projects() {
 
@@ -51,37 +51,47 @@ function Projects() {
   return (
 
     projects && (
-    <>
-      <h1 className='projectsTitle'> Projects</h1>
+    <div className="projects-div">
 
-      <div className="sliderRow">
 
+        <h2 className="projectsTitle"> Work</h2>
+
+
+
+        <Swiper
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          navigation={true}
+          style={{
+                  "--swiper-pagination-color": "#fff",
+                  "--swiper-navigation-color": "#fff",
+                }} >
           {projects.map(({data, id}) => (
-            <div className="sliderColumn">
-              <div className="sliderContainer">
-                <Swiper slidesPerView={1} pagination={{ clickable: true }}>
-                  {data.images.map((url,index) => (
 
-                      <SwiperSlide key={index}>
-                        <a href={data.url}>
-                          <div
-                        style={{
-                          backgroundImage: `url(${data.images[index]})`,
-                          borderRadius: '5px',
-                        }}
-                        className='swiperSlideDiv'
-                      ></div>
-                      <p className="swiperSlideText">{data.name}</p>
-                        </a>
-                      </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-            </div>
-          ))}
+              <SwiperSlide key={data.index}>
 
-      </div>
-    </>
+                  <a href={data.url}>
+
+                    <div
+                  style={{
+                    backgroundImage: `url(${data.images[0]})`,
+                    borderRadius: '5px',
+                  }}
+                  className='swiperSlideDiv transition ease-in-out delay-150 hover:scale-105 duration-300'
+                ></div>
+
+                <p className="swiperSlideText">{data.name}</p>
+
+                  </a>
+
+              </SwiperSlide>
+
+            ))}
+
+        </Swiper>
+
+    </div>
+
     )
 )
 }
