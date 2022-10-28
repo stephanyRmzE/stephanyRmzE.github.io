@@ -1,7 +1,8 @@
 .projects-div{
+  margin: 0;
   height: 100vh;
   background-color: #740A8F;
-  padding: 1em 0 0 0;
+  padding: 1px;
 }
 
 .projectsTitle {
@@ -9,7 +10,26 @@
   font-size: 3em;
   color: white;
   text-align: center;
-  font-weight: bold;
+}
+
+.swiperSlideText {
+
+  position: absolute;
+  bottom: -2%;
+  left: 2%;
+  font-weight: 700;
+  max-width: 90%;
+  font-size: 2rem;
+  color: white;
+  text-shadow: -1px 0 1px #391a4c7d, 0 1px 1px #391a4c7d, 1px 0 1px #391a4c7d, 0 -1px 1px #391a4c7d
+
+}
+@media screen and (max-width: 550px) {
+
+  .projectsTitle {
+    margin: 0 0 1em 1em;
+    font-size: 2em;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -19,7 +39,7 @@
 .swiperSlideDiv {
   background-Repeat: no-repeat;
   background-position: center;
-  height: 65vh;
+  height: 80vh;
   background-size: contain;
 
 }
@@ -27,58 +47,4 @@
 .swiperSlideImg {
   object-fit: cover;
 
-}
-
-.swiperSlideText {
-
-  position: absolute;
-  bottom: 4%;
-  right: 0%;
-  font-weight: 700;
-  max-width: 90%;
-  font-size: 2rem;
-  color: white;
-  text-shadow: -1px 0 1px #391a4c7d, 0 1px 1px #391a4c7d, 1px 0 1px #391a4c7d, 0 -1px 1px #391a4c7d
-
-}
-
-@media (max-width: 900px) {
-  .swiperSlideText {
-      bottom: -1%;
-      left: 2%;
-      font-size: 2rem;
-    }
-  .swiperSlideDiv {
-
-    background-Repeat: no-repeat;
-    background-position: center;
-    height: 80vh;
-    background-size: contain;
-
-    }
-}
-@media screen and (max-width: 550px) {
-
-  .projectsTitle {
-    margin: 0.8em 0 1em 0;
-    font-size: 2em;
-    font-weight: bold;
-  }
-
-  .projects-div {
-    height: 78vh;
-  }
-
-  .swiperSlideText {
-    bottom: -1%;
-    left: 3%;
-    font-size: 1rem;
-    }
-
-  .swiperSlideDiv {
-    background-position: center;
-    height: 50vh;
-    background-size: 110%;
-
-  }
 }
