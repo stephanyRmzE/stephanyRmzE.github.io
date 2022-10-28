@@ -51,7 +51,7 @@ function Projects() {
   return (
 
     projects && (
-    <div className="projects-div">
+    <div className="projects-div" id="projects">
 
 
         <h2 className="projectsTitle"> Work</h2>

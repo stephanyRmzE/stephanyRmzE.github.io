@@ -1,16 +1,24 @@
 .aboutTitle{
   color: #420e62;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 70%;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .aboutBody{
-  margin-top: 2em;
+  margin-top: 1em;
   color: #420e62;
   font-size: 1.3rem;
   width: 80%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.type-words{
+  height: 2.5rem;
+  color: #8b5aa8;
+  font-size: 2.5rem;
+  font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -33,7 +41,8 @@
 
 .aboutDiv {
   display: flex;
-  margin: 8em 0 10em 0 ;
+  padding-top: 3em;
+  margin: 0 0 5em 0;
   justify-content: flex-end;
   align-items: center;
 }
@@ -47,12 +56,14 @@
 @media (max-width: 900px) {
   .aboutDiv {
   display: flex;
-  margin: 5em 0;
+  margin: 5em 0 8em;
 }
 
   .imageDiv{
     width: 46%;
-    height: fit-content;
+    height:max-content;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .aboutTitle{
@@ -62,21 +73,29 @@
 .aboutBody{
   margin-top: 2em;
   font-size: 1rem;
-  width: 80%;
+  width: 90%;
 }
 }
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   .aboutTitle{
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
 }
 
+.type-words {
+  height: 1.9rem;
+  color: #8b5aa8;
+  font-size: 1.9rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
 .aboutBody{
-  margin-top: 1em;
+  margin-top: 1.5em;
   font-size: 1rem;
   width: 100%;
 }
