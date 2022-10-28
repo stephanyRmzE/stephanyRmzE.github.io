@@ -4,11 +4,11 @@ import Wave from 'react-wavify'
 import { SocialIcon } from "react-social-icons"
 import profile from '../assets/profile_form.png'
 import '../styles/profile.css'
-import { useNavigate } from "react-router-dom";
+
 
 
 function Banner() {
-  const navigate = useNavigate()
+
   let pauseStatus =false;
 
   return (
@@ -26,7 +26,7 @@ function Banner() {
                 Hello! <br /> I am <span className='my-name'>Stephany</span>, <br /> a software developer.
               </h1>
 
-              <button className="btn-pink" onClick={() => navigate('/contact')}>
+              <button className="btn-pink" >
                 Contact Me
               </button>
             </div>

@@ -3,6 +3,7 @@
   font-size: 2.5rem;
   width: 70%;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .aboutBody{
@@ -32,7 +33,7 @@
 
 .aboutDiv {
   display: flex;
-  margin: 5em 0 ;
+  margin: 8em 0 10em 0 ;
   justify-content: flex-end;
   align-items: center;
 }
@@ -75,8 +76,8 @@
 }
 
 .aboutBody{
-  margin-top: 2em;
-  font-size: 1.5rem;
+  margin-top: 1em;
+  font-size: 1rem;
   width: 100%;
 }
 
@@ -86,8 +87,8 @@
 
 }
   .aboutDiv {
+  margin: 0 0 2em 0;
   display: block;
-  margin: 5em 0;
 }
 
   .imageDiv{
@@ -96,8 +97,5 @@
   height: auto;
 
   }
-  .aboutDiv {
 
-  display: block;
-  }
 }

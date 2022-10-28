@@ -1,17 +1,19 @@
 import { useState } from "react"
 import "../styles/navbar.css"
 import {ReactComponent as FlowerIcon} from '../assets/svg/flower.svg'
-import { useNavigate } from "react-router-dom";
+
 import logo from '../assets/favicon-32x32.png'
+
 function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
-  const navigate = useNavigate()
+
 
   return (
-    <div>
+    <div className="nav-bar">
 
       <nav className="navigation">
-      <a class="navbar-brand" href="/">
+
+      <a className="navbar-brand" href="/">
         <img src={logo} alt="logo"/>
       </a>
       <button
@@ -28,13 +30,13 @@ function NavBar() {
         }
       >
         <ul>
-          <li  onClick={() => navigate('/')}>
+          <li  >
             <p className="navExpBut" >Home</p>
           </li>
-          <li onClick={() => navigate('/about')}>
+          <li >
             <p className="navExpBut" >About</p>
           </li>
-          <li onClick={() => navigate('/contact')}>
+          <li >
             <p className="navExpBut">Contact</p>
           </li>
         </ul>
